@@ -17,4 +17,9 @@ layout: default
   {% else %}
     Please leave comments as <a href="https://github.com/estone-code/estone-code.github.io/issues">GitHub Issues</a>.
   {% endif %}
+
+  {% if page.tags %}
+    <p/><p/>Tags: {{ page.tags | array_to_sentence_string }}
+  {% endif %}
+
 </article>
